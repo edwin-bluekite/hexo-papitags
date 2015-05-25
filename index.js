@@ -1,5 +1,6 @@
-
-hexo.extend.tag.register('classtag', function(args, content){	
+module.exports = function(ctx){
+  var tag = ctx.extend.tag;
+    tag.register('classtag', function(args, content){	
 	var result = '';
 
 	//    args.unshift('pullquote');
